@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Customers <= 370.5\ngini = 0.75\nsamples = 100.0%\nvalue = [0.25, 0.25, 0.25, 0.25]\nclass = execlente", fillcolor="#d739e500"] ;
+1 [label="Customers <= 311.5\ngini = 0.1059\nsamples = 22.4%\nvalue = [0.94, 0.06, 0.0, 0.0]\nclass = malo", fillcolor="#e58139f0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Customers <= 286.5\ngini = 0.0151\nsamples = 19.5%\nvalue = [0.99, 0.01, 0.0, 0.0]\nclass = malo", fillcolor="#e58139fd"] ;
+1 -> 2 ;
+3 [label="gini = 0.0033\nsamples = 18.6%\nvalue = [1.0, 0.0, 0.0, 0.0]\nclass = malo", fillcolor="#e58139ff"] ;
+2 -> 3 ;
+4 [label="gini = 0.2456\nsamples = 0.8%\nvalue = [0.86, 0.14, 0.0, 0.0]\nclass = malo", fillcolor="#e58139d4"] ;
+2 -> 4 ;
+5 [label="StoreType <= 3.5\ngini = 0.4706\nsamples = 3.0%\nvalue = [0.63, 0.37, 0.0, 0.0]\nclass = malo", fillcolor="#e5813968"] ;
+1 -> 5 ;
+6 [label="gini = 0.2675\nsamples = 1.5%\nvalue = [0.84, 0.16, 0.0, 0.0]\nclass = malo", fillcolor="#e58139cf"] ;
+5 -> 6 ;
+7 [label="gini = 0.4869\nsamples = 1.4%\nvalue = [0.4, 0.6, 0.01, 0.0]\nclass = regular", fillcolor="#47e53954"] ;
+5 -> 7 ;
+8 [label="Customers <= 768.5\ngini = 0.6963\nsamples = 77.6%\nvalue = [0.05, 0.31, 0.32, 0.32]\nclass = execlente", fillcolor="#d739e500"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Customers <= 562.5\ngini = 0.6354\nsamples = 46.3%\nvalue = [0.08, 0.48, 0.34, 0.09]\nclass = regular", fillcolor="#47e53935"] ;
+8 -> 9 ;
+10 [label="gini = 0.5422\nsamples = 21.2%\nvalue = [0.17, 0.63, 0.2, 0.01]\nclass = regular", fillcolor="#47e53988"] ;
+9 -> 10 ;
+11 [label="gini = 0.6265\nsamples = 25.1%\nvalue = [0.01, 0.36, 0.47, 0.16]\nclass = bueno", fillcolor="#399de52b"] ;
+9 -> 11 ;
+12 [label="Customers <= 1005.5\ngini = 0.4757\nsamples = 31.2%\nvalue = [0.0, 0.05, 0.29, 0.66]\nclass = execlente", fillcolor="#d739e585"] ;
+8 -> 12 ;
+13 [label="gini = 0.5685\nsamples = 17.0%\nvalue = [0.0, 0.08, 0.44, 0.48]\nclass = execlente", fillcolor="#d739e510"] ;
+12 -> 13 ;
+14 [label="gini = 0.2144\nsamples = 14.2%\nvalue = [0.0, 0.01, 0.11, 0.88]\nclass = execlente", fillcolor="#d739e5dd"] ;
+12 -> 14 ;
+}
